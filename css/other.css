@@ -1,0 +1,67 @@
+html, body {
+  scrollbar-color: #2f3a48 #081421;
+  scrollbar-width: thin;
+  background: #081421
+}
+
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #081421;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #2f3a48;
+}
+
+body::-webkit-scrollbar-width {
+  width: thin;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 58%;
+}
+.icon-scroll {
+  width: 20px;
+  height: 40px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(26px);
+            transform: translateY(26px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(26px);
+            transform: translateY(26px);
+  }
+}
