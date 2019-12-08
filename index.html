@@ -28,7 +28,7 @@
                             <div class="uk-navbar-right">
                                 <ul class="uk-navbar-nav">
                                     <li class="uk-active uk-visible@m"><a href="" data-uk-icon="home"></a></li>
-                                    <li class="uk-visible@s"><a href="#about" uk-scroll><button class="uk-button uk-button-text">About</button></a></li>
+                                    <li class="uk-visible@s"><a href="#about"><button class="uk-button uk-button-text">About</button></a></li>
                                     <li class="uk-visible@s"><a href=""><button class="uk-button uk-button-text">Work</button></a></li>
                                     <li class="uk-visible@s"><a href=""> <button class="uk-button uk-button-text">Contact</button></a></li>
                                     <li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
@@ -49,54 +49,108 @@
                 <!-- /TEXT -->
             </div>
             <section id="about" class="uk-section uk-section-default" style="background: #081421;">
-                    <div class="uk-container">
-                        <div class="uk-section uk-section-small uk-padding-remove-top">
-                            <div class = "uk-margin-auto" style="text-align: center;"><h1>About Me</h1></div>
-                            <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
-                                <li><a class="uk-border-pill" href="#">General</a></li>
-                                <li><a class="uk-border-pill" href="#">Programming</a></li>
-                                <li><a class="uk-border-pill" href="#">Design</a></li>
-                            </ul>
-                        </div>
-                
-                        <ul class="uk-switcher uk-margin">
-                            <li>
-                                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
-                                        <h6 class="uk-text-primary">ABOUT ME - GENERAL</h6>
-                                        <h2 class="uk-margin-small-top">Who am I?</h2>
-                                        <p class="subtitle-text">
-                                                Exceptional question! Writing an egocentric "about me" segment is pretty straightforward so I'll endeavour to be notable. Understanding what a customer wants is a priority for me so when I establish a professional relationship I try to equate with them on a human level. A few of my hobbies include photography, listening to music, reading and any intellectual activities (I'll pass on opera or ballet). One of my major defects is being too critical, although I try to lessen it I guess it is so deeply entwined in my subconscious self that it sometimes gets the best of me.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
-                                        <h6 class="uk-text-primary">ABOUT ME - PROGRAMMING</h6>
-                                        <h2 class="uk-margin-small-top">How do you code?</h2>
-                                        <p class="subtitle-text">
-                                                My coding style is, in my view, clean and straight to the point. As the old saying goes: "One must treat others how he wishes to be treated" attending to this I use semantic function names and human-readable code. I've been put in the "clean-up" position countless times so I've learnt not to write sloppy and un-understandable code. One of my favourite things to do is to program before nature (for example at the beach) as it clears my mind and allows me to focus better.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
-                                        <h6 class="uk-text-primary">ABOUT ME - DESIGN</h6>
-                                        <h2 class="uk-margin-small-top">Why did you decide to start designing?</h2>
-                                        <p class="subtitle-text">
-                                                During my web development sessions, I'd find myself misusing alarming amounts of time seeking the perfect vector or icon to fit that 10x10px space, I then realized, why should I look for something when I can create it myself. I grabbed a copy of Affinity Designer and got the creative juices flowing. After making my first few icons I progressed to logo design and created my brand and a few similar ones for friends. I still do quite a lot of iconography but I mostly focus on branding.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
+                <div class = "uk-margin-auto" style="text-align: center;"><h1>About Me</h1></div>
+                <div class="uk-container">
+                    <div class="uk-section uk-section-small uk-padding-remove-top">
+                        <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .about-switch; animation: uk-animation-fade">
+                            <li><a class="uk-border-pill" href="#">General</a></li>
+                            <li><a class="uk-border-pill" href="#">Programming</a></li>
+                            <li><a class="uk-border-pill" href="#">Design</a></li>
                         </ul>
-                
                     </div>
-                </section>
+            
+                    <ul class="about-switch uk-switcher uk-margin">
+                        <li>
+                            <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                                <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
+                                    <h6 class="uk-text-primary">ABOUT ME - GENERAL</h6>
+                                    <h2 class="uk-margin-small-top">Who am I?</h2>
+                                    <p class="subtitle-text">
+                                            Exceptional question! Writing an egocentric "about me" segment is pretty straightforward so I'll endeavour to be notable. Understanding what a customer wants is a priority for me so when I establish a professional relationship I try to equate with them on a human level. A few of my hobbies include photography, listening to music, reading and any intellectual activities (I'll pass on opera or ballet). One of my major defects is being too critical, although I try to lessen it I guess it is so deeply entwined in my subconscious self that it sometimes gets the best of me.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                                <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
+                                    <h6 class="uk-text-primary">ABOUT ME - PROGRAMMING</h6>
+                                    <h2 class="uk-margin-small-top">How do you code?</h2>
+                                    <p class="subtitle-text">
+                                            My coding style is, in my view, clean and straight to the point. As the old saying goes: "One must treat others how he wishes to be treated" attending to this I use semantic function names and human-readable code. I've been put in the "clean-up" position countless times so I've learnt not to write sloppy and un-understandable code. One of my favourite things to do is to program before nature (for example at the beach) as it clears my mind and allows me to focus better.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                                <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
+                                    <h6 class="uk-text-primary">ABOUT ME - DESIGN</h6>
+                                    <h2 class="uk-margin-small-top">Why did you decide to start designing?</h2>
+                                    <p class="subtitle-text">
+                                            During my web development sessions, I'd find myself misusing alarming amounts of time seeking the perfect vector or icon to fit that 10x10px space, I then realized, why should I look for something when I can create it myself. I grabbed a copy of Affinity Designer and got the creative juices flowing. After making my first few icons I progressed to logo design and created my brand and a few similar ones for friends. I still do quite a lot of iconography but I mostly focus on branding.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            
+                </div>
+            </section>
+            <section id="work" class="uk-section uk-section-default" style="background: #081421;">
+                <div class = "uk-margin-auto" style="text-align: center;"><h1>My Work</h1></div>
+                <div class="uk-container">
+                    <div class="uk-section uk-section-small uk-padding-remove-top">
+                        <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .work-switch; animation: uk-animation-fade">
+                            <li><a class="uk-border-pill" href="#">Programming</a></li>
+                            <li><a class="uk-border-pill" href="#">Design</a></li>
+                            <li><a class="uk-border-pill" href="#">Photography</a></li>
+                        </ul>
+                    </div>
+            
+                    <ul class="work-switch uk-switcher uk-margin">
+                        <li>
+                            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
+                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium"> 
+                                        <div class="uk-card uk-card-body">
+                                            <h3 class="uk-card-title">SyteSpace</h3>
+                                            <p>SyteSpace is a cost-effective hosting solution based in London, UK. I created the company 2 years ago with a friend. We later sold it to the current owners Adam & Callum. I stayed on as the head of software development</p>
+                                            <a href="https://sytespace.net/" class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>
+                                            <a href="https://github.com/sytespace/" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
+                                            <a href="https://twitter.com/sytespace" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a>
+                                        </div>
+                                    </div>
+                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
+                                        <div class="uk-card uk-card-body">
+                                                <h3 class="uk-card-title">EMC-SBM-APP</h3>
+                                                <p>Yes, that is the name <code>emc-sbm-app</code> I made this to help all the members of these <a uk-tooltip="SBM stands for Student Board Meetings which are monthly meetings that occur between representatives of each class and a panel (board) of faculty members including the school's deputy headteacher.">SBM</a>s organize the meetings better. They can vote on topics and confirm their presence in the next meeting</p>
+                                                <a href="https://github.com/MM-coder/emc-sbm-app" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
+                                        </div>
+                                    </div>
+                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
+                                        <div class="uk-card uk-card-body">
+                                                <h3 class="uk-card-title">Hover</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div data-uk-scrollspy-class="uk-animation-slide-left-medium">
+                                        <div class="uk-card uk-card-body">
+                                                <h3 class="uk-card-title">Hover</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+            
+                </div>
+            </section>
             <!-- OFFCANVAS -->
             <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
                 <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
