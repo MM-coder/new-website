@@ -65,3 +65,60 @@ body::-webkit-scrollbar-width {
             transform: translateY(26px);
   }
 }
+
+@-moz-keyframes heartThrob {
+  10% {
+   transform:scale(1.15)
+  }
+  20% {
+   transform:scale(1)
+  }
+  40% {
+   transform:scale(1.15)
+  }
+  60% {
+   transform:scale(1)
+  }
+ }
+ @-webkit-keyframes heartThrob {
+  10% {
+   transform:scale(1.15)
+  }
+  20% {
+   transform:scale(1)
+  }
+  40% {
+   transform:scale(1.15)
+  }
+  60% {
+   transform:scale(1)
+  }
+ }
+ @-o-keyframes heartThrob {
+  10% {
+   transform:scale(1.15)
+  }
+  20% {
+   transform:scale(1)
+  }
+  40% {
+   transform:scale(1.15)
+  }
+  60% {
+   transform:scale(1)
+  }
+ }
+ @keyframes heartThrob {
+  10% {
+   transform:scale(1.15)
+  }
+  20% {
+   transform:scale(1)
+  }
+  40% {
+   transform:scale(1.15)
+  }
+  60% {
+   transform:scale(1)
+  }
+ }

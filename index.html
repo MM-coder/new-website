@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Mauro M.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/other.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
         <!-- UIkit JS -->
@@ -22,16 +24,15 @@
                         <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
                             <div class="uk-navbar-left">
                                 <div class="uk-navbar-item">
-                                    <a class="uk-logo" href=""><img src="img/cover-logo.svg" alt="Logo"></a>
+                                    <a class="uk-logo" href=""><img src="img/favicon.ico" alt="Logo"></a>
                                 </div>
                             </div>
                             <div class="uk-navbar-right">
                                 <ul class="uk-navbar-nav">
                                     <li class="uk-active uk-visible@m"><a href="" data-uk-icon="home"></a></li>
                                     <li class="uk-visible@s"><a href="#about"><button class="uk-button uk-button-text">About</button></a></li>
-                                    <li class="uk-visible@s"><a href=""><button class="uk-button uk-button-text">Work</button></a></li>
-                                    <li class="uk-visible@s"><a href=""> <button class="uk-button uk-button-text">Contact</button></a></li>
-                                    <li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
+                                    <li class="uk-visible@s"><a href="#work"><button class="uk-button uk-button-text">Work</button></a></li>
+                                    <li class="uk-visible@s"><a href="#contact"> <button class="uk-button uk-button-text">Contact</button></a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -181,13 +182,24 @@
             
                 </div>
             </section>
-            <!-- OFFCANVAS -->
-            <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
-                <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-                    <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+            <section id = "contact" class="uk-section">
+                <div class = "uk-align-center" style="text-align: center;"><h1>Connect</h1></div>
+                <div class="uk-width-1-2 uk-align-center uk-text-center">
+                    <div class="uk-grid-row-small" uk-grid>
+                        <div><a href="mailto:hello@maurom.dev" class="uk-icon-button uk-margin-small-right" uk-icon="mail" ></a><code>hello@maurom.dev</code></div>
+                        <div><a href="https://github.com/MM-coder" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a><code>@MM-coder</code></div>
+                        <div><a href="https://reddit.com/u/BoringJelly" class="uk-icon-button uk-margin-small-right" uk-icon="reddit" ></a><code>u/BoringJelly</code></div>
+                        <div><a href="https://www.instagram.com/mauro.m.design/" class="uk-icon-button uk-margin-small-right" uk-icon="instagram" ></a><code>mauro.m.design</code></div>
+                        <div><a href="https://dribbble.com/maurom" class="uk-icon-button uk-margin-small-right" uk-icon="dribbble" ></a><code>maurom</code></div>
+                        <div><a href="https://500px.com/maurom_photography" class="uk-icon-button uk-margin-small-right" uk-icon="500px" ></a><code>maurom_photography</code></div>
+                    </div>
                 </div>
-            </div>
-            <!-- /OFFCANVAS -->
+            </section>
+            <footer id="site-foot" class="uk-section uk-section-secondary uk-section-xsmall" uk-sticky="bottom: true" style="background-color: #2f3a48">
+                    <div class="uk-container uk-text-small uk-text-center">
+                        <i class="fas fa-terminal"></i> with <i style="animation: 1.5s heartThrob infinite;padding: 3px;" class="fas fa-heart"></i> by <a href="https://maurom.dev/">Mauro M.</a>
+                    </div>
+                </footer>
         </div>
 	</body>
 </html>
