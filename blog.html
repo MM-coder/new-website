@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mauro M. | Blog</title>
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/other.css">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit-icons.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body class="uk-dark uk-height-viewport" style="background: #081421;">
+		<header  class="uk-light" id="header" data-uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
+			<div class="uk-container">
+				<nav id="navbar" data-uk-navbar="mode: click;">
+                    <div class="uk-navbar-left nav-overlay uk-visible@m">
+						<ul class="uk-navbar-nav">
+                            <li class="uk-visible@m"><a href="index.html" data-uk-icon="home" uk-tooltip="Home"></a></li>
+							<li class="uk-visible@s"><a href="index.html#contact"> <button class="uk-button uk-button-text">Contact</button></a></li>
+							<li class="uk-visible@s"><a href="brand.html"> <button class="uk-button uk-button-text">Brand</button></a></li>
+						</ul>
+					</div>
+					<div class="uk-navbar-center nav-overlay">
+						<a class="uk-navbar-item uk-logo" href="blog.html" title="Logo"><img width="58px" height="58px" src="img/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="uk-navbar-right nav-overlay">
+						<div class="uk-navbar-item">
+							<a class="uk-visible@s" style="margin-right: 4px; margin-left: 4px" href="https://twitter.com/mauro_m_rants" data-uk-icon="twitter"></a>
+							<a class="uk-visible@s" style="margin-right: 4px; margin-left: 4px" href="https://www.instagram.com/mauro.m.design/" data-uk-icon="instagram"></a>
+							<a class="uk-visible@s" style="margin-right: 4px; margin-left: 4px" href="https://github.com/MM-coder/" data-uk-icon="github"></a>
+							<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+						</div>
+						
+					</div>
+					<div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+						<div class="uk-navbar-item uk-width-expand">
+							<form class="uk-search uk-search-navbar uk-width-1-1">
+								<input class="uk-search-input" type="search" placeholder="Search...">
+							</form>
+						</div>
+						<a class="uk-navbar-toggle" data-uk-close data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<section class="uk-section uk-section-small">
+			<div class="uk-container">
+				<div class="uk-height-large uk-cover-container uk-border-rounded">
+					<img src="img/blog/ubuntu-header.jpg" alt="Alt img" data-uk-cover>
+					<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-dark uk-text-center">
+						<div data-uk-scrollspy="cls: uk-animation-slide-bottom-small">
+							<span style="letter-spacing: 0.2em; font-size: 0.725rem">FEATURED ARTICLE</span>
+							<h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent">Ubuntu As A Daily Driver?</h1>
+							<p>A tale of how linux proved once again to be better</p>
+							<a href="ubuntu-as-a-daily-driver.html" class="uk-button uk-button-default uk-margin-top">GO TO ARTICLE</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<footer id="site-foot" class="uk-section uk-section-secondary uk-section-xsmall" uk-sticky="bottom: true" style="background-color: #2f3a48" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+			<div class="uk-container uk-text-small uk-text-center">
+				<i class="fas fa-terminal"></i> with <i style="animation: 1.5s heartThrob infinite;padding: 3px;" class="fas fa-heart"></i> by <a href="https://maurom.dev/">Mauro M.</a>
+			</div>
+		</footer>
+	</body>
+</html>
