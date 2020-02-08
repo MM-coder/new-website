@@ -122,3 +122,11 @@ body::-webkit-scrollbar-width {
    transform:scale(1)
   }
  }
+
+
+ 
+.thumb {
+  object-fit: cover;
+  min-width: 200px;
+  min-height: 200px;
+}
