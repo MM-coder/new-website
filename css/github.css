@@ -1,0 +1,28 @@
+div.stat {
+    /* background-color: rgba(242,242,242,.1);
+    border-radius: 500px; */
+    padding: 5px;
+    padding-left: 0px;
+    max-width: max-content;
+}
+
+div.stat .uk-icon > svg {
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+
+.stats-grid {
+    margin-bottom: 10px;
+}
+
+.stats-grid > * {
+    padding-left: 8px;
+}
+
+.stats-grid > .uk-first-column {
+    padding-left: 15px;
+}
+
+#github-grid .uk-card-body > p{
+    margin-bottom: 0;
+}
