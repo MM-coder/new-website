@@ -1,9 +1,9 @@
 function htmlToElem(html) {
     let temp = document.createElement('template');
-    html = html.trim(); // Never return a space text node as a result
+    html = html.trim();
     temp.innerHTML = html;
     return temp.content.firstChild;
-  }
+}
 
 var request = new XMLHttpRequest()
 request.open('GET', 'https://api.github.com/users/MM-coder/repos', true)
