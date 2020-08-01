@@ -28,7 +28,7 @@ request.onload = function () {
                 name.split('-').forEach(i => {
                     l.push(i.charAt(0).toUpperCase() + i.slice(1))
                 })
-                return l[0] + ' ' + l[1]
+                return l.join(' ');
             }
 
             var html = `<div data-uk-scrollspy-class="uk-animation-slide-left-medium">
