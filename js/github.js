@@ -12,6 +12,16 @@ request.onload = function () {
     var data = JSON.parse(this.response)
     data.forEach(i => {
         if (((Math.ceil((Date.now() - Date.parse(i['updated_at'])) / (1000 * 60 * 60 * 24))) <= 7 || (i['stargazers_count'] >= 10 && i['fork'] == false)) && i['description'] != null &&  i['fork'] == false) {
+
+            function getHomepage() {
+                if (i['homepage']) {
+                    return `<a href="${i['homepage']}" class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>`;
+                }
+                else {
+                    return ''
+                }
+            }
+
             var html = `<div data-uk-scrollspy-class="uk-animation-slide-left-medium">
                             <div class="uk-card uk-card-body">
                                 <h3 class="uk-card-title">${i['name']}</h3>
@@ -29,6 +39,7 @@ request.onload = function () {
                                     </div>
                                 </div>
                                 <a href="${i['html_url']}" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
+                                ${getHomepage()}
                             </div>
                         </div>`
 
