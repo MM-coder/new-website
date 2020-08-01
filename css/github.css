@@ -23,6 +23,10 @@ div.stat .uk-icon > svg {
     padding-left: 15px;
 }
 
-#github-grid .uk-card-body > p{
+#github-grid .uk-card-body > p, #github-grid .uk-card-body > h3{
     margin-bottom: 0;
+}
+
+#github-grid .uk-card-body > p{
+    margin-top: 8px;
 }

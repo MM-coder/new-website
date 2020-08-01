@@ -34,6 +34,7 @@ request.onload = function () {
             var html = `<div data-uk-scrollspy-class="uk-animation-slide-left-medium">
                             <div class="uk-card uk-card-body">
                                 <h3 class="uk-card-title">${getName()}</h3>
+                                <small><code>${i['full_name']}</code></small>
                                 <p>${i['description']}</p>
                                 <div class="uk-grid-small stats-grid" uk-grid>
                                     <div>
