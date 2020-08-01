@@ -22,9 +22,18 @@ request.onload = function () {
                 }
             }
 
+            function getName() {
+                var name = i['name']
+                var l = []
+                name.split('-').forEach(i => {
+                    l.push(i.charAt(0).toUpperCase() + i.slice(1))
+                })
+                return l[0] + ' ' + l[1]
+            }
+
             var html = `<div data-uk-scrollspy-class="uk-animation-slide-left-medium">
                             <div class="uk-card uk-card-body">
-                                <h3 class="uk-card-title">${i['name']}</h3>
+                                <h3 class="uk-card-title">${getName()}</h3>
                                 <p>${i['description']}</p>
                                 <div class="uk-grid-small stats-grid" uk-grid>
                                     <div>
