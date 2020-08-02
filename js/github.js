@@ -13,15 +13,6 @@ request.onload = function () {
     data.forEach(i => {
         if (((Math.ceil((Date.now() - Date.parse(i['updated_at'])) / (1000 * 60 * 60 * 24))) <= 7 || (i['stargazers_count'] >= 10 && i['fork'] == false)) && i['description'] != null &&  i['fork'] == false) {
 
-            function getHomepage() {
-                if (i['homepage']) {
-                    return `<a href="${i['homepage']}" class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>`;
-                }
-                else {
-                    return ''
-                }
-            }
-
             function getName() {
                 var name = i['name']
                 var l = []
@@ -49,7 +40,7 @@ request.onload = function () {
                                     </div>
                                 </div>
                                 <a href="${i['html_url']}" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
-                                ${getHomepage()}
+                                ${i['homepage'] ? '' : `<a href="${i['homepage']}" class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>`}
                             </div>
                         </div>`
 
