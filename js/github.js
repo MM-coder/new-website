@@ -40,7 +40,7 @@ request.onload = function () {
                                     </div>
                                 </div>
                                 <a href="${i['html_url']}" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
-                                ${i['homepage'] ? '' : `<a href="${i['homepage']}" class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>`}
+                                ${i['homepage'] ? `<a href="${i['homepage']}" class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>` : ''}
                             </div>
                         </div>`
 
