@@ -6,7 +6,7 @@ function htmlToElem(html) {
 }
 
 var request = new XMLHttpRequest()
-request.open('GET', 'https://api.github.com/users/MM-coder/repos', true)
+request.open('GET', 'https://api.github.com/users/MM-coder/repos?per_page=100', true)
 
 request.onload = function () {
     var data = JSON.parse(this.response)
