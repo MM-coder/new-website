@@ -11,7 +11,7 @@ request.open('GET', 'https://api.github.com/users/MM-coder/repos?per_page=100', 
 request.onload = function () {
     var data = JSON.parse(this.response)
     data.forEach(i => {
-        if (((Math.ceil((Date.now() - Date.parse(i['updated_at'])) / (1000 * 60 * 60 * 24))) <= 7 || (i['stargazers_count'] >= 10 && i['fork'] == false)) && i['description'] != null &&  i['fork'] == false) {
+        if (((Math.ceil((Date.now() - Date.parse(i['updated_at'])) / (1000 * 60 * 60 * 24))) <= 7 || (i['stargazers_count'] >= 0 && i['fork'] == false)) && i['description'] != null &&  i['fork'] == false) {
 
             function getName() {
                 var name = i['name']
