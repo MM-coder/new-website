@@ -171,4 +171,13 @@ body::-webkit-scrollbar-width {
   pointer-events: none;
 }
 
+.category {
+  background: rgba(255,255,255,.1);
+  padding: 5px 10px;
+  text-align: center;
+}
 
+.uk-alert {
+  background-color: #2f3a48 !important;
+  color: white;
+}
