@@ -5,13 +5,13 @@ A new webpage I created after acquiring the .dev domain. Composed using UIkit (A
 ## How to use on your local machine
 
 ### Requirements:
-* cmd (if on linux: terminal emulator & on mac: terminal)
+* cmd (if on linux - terminal emulator & on mac - terminal)
 * git (https://git-scm.com/downloads)
 
 ```
 git clone https://github.com/MM-coder/my-webpage.git
 cd my-webpage
-firefox index.html :: or chrome index.html
+firefox index.html :: chrome index.html
 ```
 
 ## License
